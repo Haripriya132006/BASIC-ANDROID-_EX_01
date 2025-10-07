@@ -86,16 +86,17 @@ public class MainActivity extends AppCompatActivity {
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="6dp"
-        tools:text="7/10/2025" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        android:text="7/10/2025" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 ## OUTPUT:
-<img width="851" height="908" alt="image" src="https://github.com/user-attachments/assets/49569f9d-4d17-477d-99c7-dcc6947388fa" />
+<img width="859" height="904" alt="image" src="https://github.com/user-attachments/assets/1853c331-6527-45ec-b89c-3208640413cf" />
 
 ## RESULT:
 Thus a program to implement the various life cycles of an activity is written and successfully executed using Android Studio.
