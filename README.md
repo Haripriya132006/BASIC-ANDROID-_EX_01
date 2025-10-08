@@ -127,6 +127,10 @@ public class MainActivity extends AppCompatActivity {
 ```
 ## OUTPUT:
 <img width="859" height="904" alt="image" src="https://github.com/user-attachments/assets/1853c331-6527-45ec-b89c-3208640413cf" />
+<img width="993" height="848" alt="image" src="https://github.com/user-attachments/assets/3afeae87-a9b2-421f-96cb-eb6fd2a7a03a" />
+<img width="1753" height="163" alt="image" src="https://github.com/user-attachments/assets/47a864b5-d53b-4529-b0a9-d5ebc4bc7941" />
+<img width="1783" height="408" alt="image" src="https://github.com/user-attachments/assets/0eaaa977-71e0-4833-b4e6-6a0710aa4320" />
+
 
 ## RESULT:
 Thus a program to implement the various life cycles of an activity is written and successfully executed using Android Studio.
