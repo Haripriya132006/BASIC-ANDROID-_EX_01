@@ -33,6 +33,8 @@ RegisterNumber:  212223220030
 package com.example.ex_1;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,14 +47,42 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        Log.d("Lifecycle","onCreate() is called");
+        Toast.makeText(this,"Created the activity",Toast.LENGTH_SHORT).show();
+
     }
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Log.d("Lifecycle","onResume() is called");
+    }
+    @Override
+    protected void onStart(){
+        super.onStart();
+        Log.d("Lifecycle","onStart() is called");
+    }
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Log.d("Lifecycle","onStop() is called");
+    }
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.d("Lifecycle","onPause() is called");
+    }
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.d("Lifecycle","onRestart() is called");
+    }
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d("Lifecycle","onDestroy() is called");
+    }
+
 }
 ```
 ## activitymain.xml:
